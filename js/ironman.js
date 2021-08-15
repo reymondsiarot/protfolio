@@ -5,7 +5,7 @@ ironman.style.marginLeft = "800px";
 
 ironman.style.transform = "scaleX(-1)"
 const interval1 =  setTimeout(()=>{
-    ironman.style.marginLeft = "550px";
+    ironman.style.marginLeft = "250px";
     clearTimeout(interval1)
 },2000)
 
@@ -34,9 +34,10 @@ ironman.addEventListener("click",function(){
 });
 
 /////create iron man
-const createIman = document.querySelector("body")
+const createIman = document.querySelector("body .container")
 
 function createIronMan(){
+  
     const newironMan = document.createElement("img")
     newironMan.src = "https://media.giphy.com/media/ViISfGApLXwPhxrtA6/giphy.gif";
     newironMan.className ="ironman"
@@ -44,7 +45,7 @@ function createIronMan(){
 
     newironMan.style.bottom = "0px"
     setTimeout(()=>{
-        newironMan.style.bottom = "1100px"
+        newironMan.style.bottom =  window.innerHeight+"px"
     },10)
 
     setTimeout(()=>{
