@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="bgdark">
+    <div class="container">
+    <div class="header ">
+        <div class="title">RDJ</div>
+        <div class="header-link">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">BLOG</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-left">
+            <div class="welcome-text">Welcome</div>
+            <div class="title-text">I am Iron Man</div>
+            <div class="desc-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sequi quam nobis doloribus earum deleniti repudiandae, dicta culpa cum.</div>
+            <div>
+                <button class="contact-btn" onclick="createIronMan()">Say Hi!</button>
+            </div>
+        </div>
+        <div class="main-right">
+            <img src="image/rdj.png" alt="">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="list-container">
+            <div class="list-header">
+                <div  class="cat-header-text">Skills</div>
+                <div class="input-container"> 
+                    <input id="skillInput" type="text">
+                    <button id="addSkillBtn">Add</button>
+                </div>
+            </div>
+            <div id="skillList">
+               
+            </div>
+        </div>
+        <div class="list-container">
+            <div class="list-header">
+                <div  class="cat-header-text">Hobbies</div>
+                <div class="input-container"> 
+                    <input id="hobbyInput" type="text">
+                    <button id="addHobbyBtn">Add</button>
+                </div>
+            </div>
+            <div id="hobbyList">
+            </div>
+        </div>
+        <div class="list-container">
+            <div class="list-header">
+                <div  class="cat-header-text">Movies</div>
+                <div class="input-container"> 
+                    <input id="movieInput" type="text">
+                    <button id="addMovieBtn">Add</button>
+                </div>
+            </div>
+            <div id="movieList">
+               
+            </div>
+        </div>
+    </div>
+</div>
+<img id="ironman" src="https://media.giphy.com/media/SXyDYS8HSWfaMTmKGJ/giphy.gif" width="100" alt="">
+<div class="overlaybackground">
+    <img src="image/ironman.png" alt="">
+</div>
+<script src="js/main.js"></script>
+<script src="js/ironman.js"></script>
+</body>
+</html>
