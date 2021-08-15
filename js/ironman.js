@@ -37,11 +37,12 @@ ironman.addEventListener("click",function(){
 const createIman = document.querySelector("body .container")
 
 function createIronMan(){
-  
+    const width = (window.outerWidth > window.innerWidth ? window.innerWidth : window.outerWidth) - 200
+    console.log(width)
     const newironMan = document.createElement("img")
     newironMan.src = "https://media.giphy.com/media/ViISfGApLXwPhxrtA6/giphy.gif";
     newironMan.className ="ironman"
-    const random = Math.random()*1700;
+    const random = Math.random()*width;
 
     newironMan.style.bottom = "0px"
     setTimeout(()=>{
